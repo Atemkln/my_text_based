@@ -1,6 +1,6 @@
 import pickle
 
-story = {
+part1 = {
     1: {
       'Text': [
             "Oh, uh hey.",
@@ -31,8 +31,8 @@ story = {
     3: {
         'Text': [
             "Ah...shit",
-            "Yo! Rocko!",
-            "The kids awake but he's acting all dopey and stuff!",
+            "Yo!!",
+            "The kid is awake but they're acting all dopey and stuff!",
             "...",
             "Hey kid, any idea how to cure a hangover?"
         ],
@@ -72,20 +72,64 @@ story = {
       'Text': [
             "Get it?",
             "What the hell are you talking about?",
-            "Amigo...",
+            "Friendo...",
             "Do you even know where you are right now?",
         ],
-      'Options': []
+      'Options': [
+        ("...", 8),
+        ("...",8)
+        ]
     },
     7: {
       'Text': [
             "Hm...",
-            "Well amigo,",
+            "Well friendo,",
             "I guess you'll find out as soon as the flames find you.",
+        ],
+      'Options': [
+        ("...", 8),
+        ("...",8)
+      ]
+    },
+    8: {
+      'Text': [
+            "PART 1",
+            "BLAZE OF GLORY",
+            "I guess you'll find out as soon as the flames find you...",
         ],
       'Options': []
     },
 }
 
-with open('chapter1.ch', 'wb') as chapter:
-  pickle.dump(story, chapter)
+with open('part1.ch', 'wb') as chapter:
+  pickle.dump(part1, chapter)
+
+part2 = {
+  1: {
+      'Text': [
+            "The leaves blew hurridly across the concrete streets.",
+            "Circling overhead was a dark and gloomy sky.",
+            "'These are mean streets' is how my partner would have put it.",
+            "Mean streets, indeed.",
+            "They were shot a few years back,",
+            "Didn't fully kill 'em, but they were never the same after that.",
+            "I had failed to realize the magnitude of that event at the time.",
+            "At that time I'm pretty sure I saw most people like how some would see puzzle pieces,",
+            "Trying to understand how each one fit with the other.",
+            "...",
+            "'I need a coffee.'", 
+            "'And a haircut.'",
+            "'And a cigarette.'",
+            "...",
+            "Haaah.",
+        ],
+      'Options': [
+          ("Go to the diner", 2),
+          ("Go to the haircut", 3),
+          ("Go to the cigarette", 4)
+        ]
+    },
+}
+
+with open('part2.ch', 'wb') as chapter:
+  pickle.dump(part2, chapter)

@@ -1,12 +1,22 @@
 import sys,time,random,pickle,getpass
 
+def flush_input():
+    try:
+        import msvcrt
+        while msvcrt.kbhit():
+            msvcrt.getch()
+    except ImportError:
+        import sys, termios    #for linux/unix
+        termios.tcflush(sys.stdin, termios.TCIOFLUSH)
+
 def slow_type(t):
-    typing_speed = 80 #wpm
-    for l in t:
-        sys.stdout.write(l)
-        sys.stdout.flush()
-        time.sleep(10.0/typing_speed)
-    print('')
+  typing_speed = 120 #wpm
+  for l in t:
+      flush_input()
+      sys.stdout.write(l)
+      sys.stdout.flush()
+      time.sleep(10.0/typing_speed)
+  print("")
 
 def get_input(valid_input: list):
   count = 0
@@ -61,7 +71,17 @@ def story_flow(story: dict):
    
 if __name__=='__main__':
     story = {}
-    with open('chapter1.ch', 'rb') as chapter:
+    with open('part1.ch', 'rb') as chapter:
+ 
+        story = pickle.load(chapter)
+
+    story_flow(story)
+
+print(25*"\n")
+
+if __name__=='__main__':
+    story = {}
+    with open('part2.ch', 'rb') as chapter:
  
         story = pickle.load(chapter)
 

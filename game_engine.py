@@ -29,7 +29,6 @@ def get_input(valid_input: list):
 def display_page_text(lines: list):
   for line in lines:
     slow_type(line)
-    # Make the user press enter to see the next line
     get_input([""])
 
 def get_response(options: list):

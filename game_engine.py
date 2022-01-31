@@ -1,4 +1,4 @@
-import sys,time,random,getpass,os,story_data
+import sys,time,getpass,story_data
 from typing import Any
 
 def flush_input():
@@ -59,7 +59,6 @@ def story_flow(story: dict):
     page = story.get(curr_page, Any)
     
     if page == None:
-      curr_page = None
       break
 
     display_page_text(page['Text'])

@@ -1,4 +1,5 @@
-import sys,time,random,pickle,getpass
+import sys,time,random,getpass,os,story_data
+from typing import Any
 
 def flush_input():
     try:
@@ -55,7 +56,7 @@ def story_flow(story: dict):
   curr_page = 1
 
   while curr_page != None:
-    page = story.get(curr_page, None)
+    page = story.get(curr_page, Any)
     
     if page == None:
       curr_page = None
@@ -70,19 +71,5 @@ def story_flow(story: dict):
     curr_page = get_response(page['Options'])
    
 if __name__=='__main__':
-    story = {}
-    with open('part1.ch', 'rb') as chapter:
- 
-        story = pickle.load(chapter)
-
-    story_flow(story)
-
-print(25*"\n")
-
-if __name__=='__main__':
-    story = {}
-    with open('part2.ch', 'rb') as chapter:
- 
-        story = pickle.load(chapter)
-
-    story_flow(story)
+    story_flow(story_data.part1)
+    story_flow(story_data.part2)

@@ -29,9 +29,8 @@ part1 = {
     3: {
         'Text': [
             "Ah...darn",
-            "Yo!!",
-            "The PERSON is awake but they're acting all dopey and stuff!",
             "...",
+            "Yo!",
             "Hey PERSON, any idea how to cure a hangover?"
         ],
         'Options': [
@@ -74,26 +73,28 @@ part1 = {
             "Do you even know where you are right now?",
         ],
       'Options': [
-        ("...", 8),
-        ("...",8)
+        ("...", 11),
+        ("...",11)
         ]
     },
     7: {
       'Text': [
-            "Hm...",
             "Well friendo,",
             "I guess you'll find out as soon as the flames find you.",
         ],
       'Options': [
-        ("...", 8),
-        ("...",8)
+        ("...", 11),
+        ("...",11)
       ]
     },
-    8: {
+    11: {
       'Text': [
             "PART 1",
             "BLAZE OF GLORY",
-            "I guess you'll find out as soon as the flames find you...",
+            "",
+            "",
+            "          --SOMEWHERE IN CANADA--",
+            "",
         ],
       'Options': []
     },
@@ -116,7 +117,7 @@ part2 = {
       'Options': [
           ("Go to the diner", 2),
           ("Go to the corner store", 7),
-          ("Go to the convenience store", 8)
+          ("Go to the convenience store", 10)
         ]
     },
   2: {
@@ -129,7 +130,7 @@ part2 = {
       'Options': [
           ("Go to the diner", 3),
           ("Go to the corner store", 7),
-          ("Go to the convenience store", 8)
+          ("Go to the convenience store", 10)
         ]
     },
   3: {
@@ -137,7 +138,7 @@ part2 = {
             "Guess chocolate milk is the only thing we're after then?",
             "A little strange, but I guess whatever.",
             "",
-            "",
+            "          --JESSIE's DINER--",
             "",
             "Jessie's was bustling with activity.",
             "It was the quintessential Greasy Spoon type deal.",
@@ -162,9 +163,9 @@ part2 = {
   4: {
       'Text': [
             "???",
-            "You must be insane haha!",
-            "No wayy! We're just friends.",
-            "I would never do anything that would jeopardize this wonderful friendship.",
+            "You must be insane haha! like,",
+            "No wayyy. We're just friends.",
+            "I would never do anything to jeopardize this wonderful friendship.",
             "...",
             "That I think is great.",
             "And I certainly wouldn't want to jeopardize.",
@@ -177,40 +178,45 @@ part2 = {
     },
   5: {
       'Text': [
-            "'Actually, Jessie, I'll have the milk afterall,'",
-            "'They, they say ignorance is bliss,'",
-            "'And today's a day I'm feeling particularly blissful.'",
-            "*+10 to AWESOMENESS factor!*",
+            "MAIN: 'Actually, Jessie, I'll have the milk afterall,'",
+            "MAIN: 'They say ignorance is bliss,'",
+            "MAIN: 'And today's a day I'm feeling particularly blissful.'",
+            "*+11 to AWESOMENESS factor!*",
+            "",
+            "          --JESSIE'S EXTERIOR--",
             "",
             "Jessie's door clooses behind me, and I am once again faced with a difficult choice."
         ],
       'Options': [
-          ("Go to the corner store", 3),
-          ("Go to the convenience store", 4)
+          ("Go to the corner store", 8),
+          ("Go to the convenience store", 11)
         ]
     },
   6: {
       'Text': [
-            "'So what do you got for me?.'",
+            "MAIN: 'So what do you got for me?.'",
             "Jessie's mouth folded into a grim half-smile.",
-            "'Take a look at this, @#$%&,",
+            "JESSIE: 'Take a look at this, @#$%&,",
             "Jessie slid a note face-down across the counter,",
-            "'Recognize it?'"
+            "JESSIE: 'Recognize it?'"
             "I flipped it over.",
             "...",
             "437 dollars...?"
-            "'And 59 cents.",
+            "JESSIE: 'And 511 cents.",
             "???",
             "",
             "With my tab largely unpaid, I leave empty-handed."
             "",
-            "*-1000 to AWESOMENESS factor!*",
+            "*-1100 to AWESOMENESS factor!*",
             "",
             "...whatever."
+            "",
+            "          --JESSIE'S EXTERIOR--",
+            "",             
         ],
       'Options': [
-          ("Go to the corner store", 7),
-          ("Go to the convenience store", 9)
+          ("Go to the corner store", 8),
+          ("Go to the convenience store", 11)
         ]
     },
     7: {
@@ -219,23 +225,103 @@ part2 = {
             "Maybe in another lifetime you'll be able to relive the glory days of the good ol' corner store.",
             "Its drinks were cold,",
             "Its beef patties were fresh,",
-            "And it even had a gambling minigame!",
-            "Ah, crazy times..."
+            "And it even had a GAMBLING MINIGAME (COMING SOON)!",
+            "...ah, crazy times...",
+            "I guess for now, this link should do: https://www.casino.org/games/free/"            
         ],
       'Options': [
-          ("Go to the convenience store", 9)
+          ("Go to the diner", 3),
+          ("Go to the convenience store", 11)
         ]
     },
-    9: {
+        8: {
       'Text': [
-            "Ah yeah!",
-            "If there's any place in town that has all that stuff (except for the chocolate milk) it'll be there for sure.",
+            "It's been closed for years, try again.",
+            "Maybe in another lifetime you'll be able to relive the glory days of the good ol' corner store.",
+            "Its drinks were cold,",
+            "Its beef patties were fresh,",
+            "And it even had a GAMBLING MINIGAME (COMING SOON)!",
+            "...ah, crazy times...",
+            "I guess for now, this link should do: https://www.casino.org/games/free/"
+        ],
+      'Options': [
+          ("Go to the convenience store", 11)
+        ]
+    },
+    11: {
+      'Text': [
+            "???",
+            "What kind of convenience store would have any of that?",
+            "Maybe in an American convenience store?",
+            "But even then, I doubt it.",
+            "I'm gonna go take a walk and see if I can find any leads.",
             "",
+            "          --KEVIN MACLEOD PUBLIC PARK--",
             "",
+            "It started raining,",
+            "Which seemed to perfectly accentuate the...",
+            "Distinctly...NOIR tone of the current mood of feeling.",
+            "DR GREGORCHEV: 'Hello there! I am doing a survey, and would like your involvement.'",
+            "DR GREGORCHEV: 'It shouldn't take that long; a few minutes maybe.'",
+            "DR GREGORCHEV: 'Its for a paper I'm writing called THE JOYS OF MODERN LIFE",
+            "DR GREGORCHEV: 'By me, Dr. Gregorchev.'",
+            "His candour was certainly a disturbance to my NOIR-like episode.",
+            "The glasses told me he was an educated man,",
+            "While the mustard stain on his coat told me he wasn't afraid of getting his hands dirty.",
+            "MAIN: 'Yeah sure, sign me up.'",
+            "DR GREGORCHEV: 'Oh great! Thats fantastic.'",
+            "He handed me a retro-style cassette player with a pair of cheap-looking headphones.",
+            "DR GREGORCHEV: 'Listen to this, then tell me what you think.'",
+            "DR GREGORCHEV: 'It's very important that you pay close attention to the whole thing,'",
+            "DR GREGORCHEV: 'As oftentimes the things we think are unimportant are the ones that come back to haunt us.'",
+            "",
+            "          --DR GREGORCHEV'S TAPE--",
+            "",
+            "To turn to ethics?",
+            "To principles?",
+            "These are truly what are futile.",
+            "These are not ideas that have been formed through the rigors of everyday turmoil.",
+            "They were created by those who generate the discourse itself,", 
+            "And continue to be espoused by them.",
+            "The inescapable force of class,",
+            "More than any abstract or non-abstract notions of 'democracy' and 'liberty',",
+            "is the culprit.",
+            "Any attempt to promote upward mobility,",
+            "True upward mobility,",
+            "Will be met with unimaginable violence.",
+            "This is the only true choice any of us have:",
+            "To comply,",
+            "Or to face consequences.",
+            "The gambit of those in power is to convince each and every one of us,",
+            "Or at least those who would have any hope of resisting",
+            "That their systems are in any way acceptable.",
+            "*CLICK*",
+            "",
+            "          --END DR GREGORCHEV'S TAPE--",
+            "",
+            "Aaaaanddd he's gone.",
+            "So much for the survey I guess...",
+            "But I guess the shitty cassette player is mine now?",
+            "Maybe that'll come in handy?",
+            "Eh, I doubt it.",
+            "There is no way the creator of this game has that much foresight and taste!",
+            "...",
+            "Anyhow, back to important stuff that ACTUALLY matters!",
+        ],
+      'Options': [
+        ("Go to the corner store", 8),
+        ("Go to the convenience store", 11)]
+    }, 
+    11: {
+      'Text': [
+            "Oh yeah!",
+            "If there's any place in town that certainly has what I want (except for the chocolate milk) it'll be there for sure.",
+            "",
+            "          --CIRCLE Q CONVENIENCE ENTRANCE--",
             "",
             "Circle Q was a contradiction in many ways.",
             "For one thing, its logo was really more of an oval than a perfect circle.",
-            "The thing to know is that its called a 'convenience' store mostly out of irony.",
+            "What to know is that its called a 'convenience' store mostly out of irony.",
             "The owner, Phineas, was hardly ever around,",
             "So the place mostly operated on an 'honour system'.",
             "Now you'd think that this would make it more convenient, right?",
@@ -259,6 +345,7 @@ part2 = {
             "It only appears, like, 30 percent of the time?",
             "Beats me why they designed it that way...",
             "",
+            "          --CIRCLE Q CONVENIENCE STORE--",
             "",
             "The bell chimed as I walked in.",
             "Its faded shelves never changed much,",
@@ -269,49 +356,5 @@ part2 = {
             "DOWNTRODDEN"
         ],
       'Options': []
-    }, 
-    9: {
-      'Text': [
-            "Ah yeah!",
-            "If there's any place in town that has all that stuff (except for the chocolate milk) it'll be there for sure.",
-            "",
-            "",
-            "",
-            "Circle Q was a contradiction in many ways.",
-            "For one thing, its logo was really more of an oval than a perfect circle.",
-            "The thing to know is that its called a 'convenience' store mostly out of irony.",
-            "The owner, Phineas, was hardly ever around,",
-            "So the place mostly operated on an 'honour system'.",
-            "Now you'd think that this would make it more convenient, right?",
-            "Wrong!!",
-            "You see, Phineas didn't bother with pricing anything,",
-            "So the amount you left in the cash register was the amount Phineas was going to get.",
-            "Problem is, in our town and our town alone, morality isn't an abstract concept;",
-            "Its a tangible thing that has serious consequences.",
-            "No I'm serious,",
-            "Like, watch this:",
-            "...",
-            "*-30 to MORALITY factor! >:(*",
-            "*You will be facing a .3 percent increase to your annual income taxes as per CODE 13 SECTION 6 of the...*",
-            "Anyways,",
-            "You get the idea.",
-            "What it means is that in the only place in town where you can get ANYTHING,",
-            "You either end up overpaying by wayyy too much in order to avoid MORALITY penalties,",
-            "Or you underpay, and end up putting your MORALITY score in the negatives.",
-            "And the worst part is,",
-            "That message, like the one that tells you when you've messed up,",
-            "It only appears, like, 30 percent of the time?",
-            "Beats me why they designed it that way...",
-            "",
-            "",
-            "The bell chimed as I walked in.",
-            "Its faded shelves never changed much,",
-            "And even when they did, nothing interesting was ever really on them.",
-            "Except for today, of course.",
-            "",
-            "PART 2",
-            "DOWNTRODDEN"
-        ],
-      'Options': []
-    }, 
+    },     
 }

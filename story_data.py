@@ -1,7 +1,7 @@
 part1 = {
     1: {
       'Text': [
-            "|GHOUL",
+            "|NPC",
             "Oh, uh hey.",
             "I just wanted to say sorry about last night...",
             "I usually don't get that drunk and sad, but its been a rough week.",

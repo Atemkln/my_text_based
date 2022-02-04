@@ -11,7 +11,7 @@ def flush_input():
         termios.tcflush(sys.stdin, termios.TCIOFLUSH)
 
 def slow_type(t, space=True):
-  typing_speed = 12000 #wpm
+  typing_speed = 120 #wpm
   for l in t:
       flush_input()
       sys.stdout.write(l)
@@ -54,7 +54,7 @@ def display_line(line, get=0):
 def get_response(options: list):
   for index, option in enumerate(options):
     print(str(index) + ". " + option[0])
-  
+ 
   valid_inputs = [str(num) for num in range(len(options))]
 
   option_index = int(get_input(valid_inputs))
@@ -81,7 +81,7 @@ def story_flow(story: dict):
       break
 
     curr_page = get_response(page['Options'])
-  
+
 if __name__=='__main__':
     story_flow(story_data.part1)
     story_flow(story_data.part2)

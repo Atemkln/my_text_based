@@ -39,13 +39,17 @@ def get_input(valid_input: list):
       return user_entered
 
 def display_line(line, get=0):
-    slow_type(line)
     if get == 0:
-      get_input([""])
+      slow_type(line)
+      choice0 = get_input([""])
+      return choice0
     elif get == 1:
-      get_input(["0","1","2"])
+      slow_type(line,space=False)
+      choice1 = get_input(["0","1","2"])
+      return choice1
     elif get == 2:
-      pass
+      slow_type(line)
+      print("")
 
 def get_response(options: list):
   for index, option in enumerate(options):

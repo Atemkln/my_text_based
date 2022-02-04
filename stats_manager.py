@@ -26,19 +26,19 @@ class Enemy:
     def enemy_introduction(self):
         game_engine.display_line(self.intro_dialogue)
 
-    def enemy_attack(self, user_health):
+    def enemy_attack(self):
         attack_modifier = random.randint(1,5)
-        total_attack = attack_modifier + self.attack
-        user_health -= total_attack
+        attack_modifier += self.attack
         game_engine.display_line(self.attack_dialogue)
-        game_engine.display_line(f"{self.name} hits you for {total_attack} DAMAGE!")
-        return user_health
+        game_engine.display_line(f"{self.name} hits you for {attack_modifier} DAMAGE!")
+        return attack_modifier
 
     def enemy_luck(self,luckstat):
         luck_modifier = random.randint(1,100)
         total_luck = luck_modifier + self.luck
         game_engine.display_line(self.luck_dialogue)
         game_engine.display_line(f"{self.name} takes a chance!")
+        game_engine.display_line("3...\n2...\n1...", get=2)
         if total_luck > luckstat:
             game_engine.display_line(f"Oh no!\n{self.name} has manipulated the twisting sands of FATE!")
         else:
@@ -52,4 +52,4 @@ ghoul = Enemy("GHOUL",50,7,2,10,"'BoooOooO! I'm gonna succ you!'","'Suck on this
 salesperson = Enemy("OVERLY-FRIENDLY VACUUM SALESPERSON",150,15,30,15,"'CAN I INT$RE$T YOU IN OUR WARRANTY PLAN!!'","'CHOP THO$E PRIC$S!!$$!'","'M$$T M$ IN THE MIDDL$ H$R$!!'",
 "'LET$ PLAY THE GAM$ OF LIF$$$!!'", "'SIGN H$R$ PL$AS$!!:)))'","'NOO!! MY BOTTOM LIN$$$!!:((('")
 
-enemies = {"GHOUL":ghoul, "OVERLY-FRIENDLY VACUUM SALESPERSON":salesperson}
+enemies = {"GHOUL":ghoul,"OVERLY-FRIENDLY VACUUM SALESPERSON":salesperson}

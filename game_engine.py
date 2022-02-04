@@ -11,7 +11,7 @@ def flush_input():
         termios.tcflush(sys.stdin, termios.TCIOFLUSH)
 
 def slow_type(t, space=True):
-  typing_speed = 120 #wpm
+  typing_speed = 12000 #wpm
   for l in t:
       flush_input()
       sys.stdout.write(l)
